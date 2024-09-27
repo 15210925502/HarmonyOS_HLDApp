@@ -1,0 +1,28 @@
+{
+	"app": {
+		"bundleName": "com.smartdb",
+		"debug": true,
+		"versionCode": 1000000,
+		"versionName": "1.0.0",
+		"minAPIVersion": 40100011,
+		"targetAPIVersion": 50000012,
+		"apiReleaseType": "Beta5",
+		"compileSdkVersion": "5.0.0.60",
+		"compileSdkType": "HarmonyOS",
+		"appEnvironments": [],
+		"bundleType": "app"
+	},
+	"module": {
+		"name": "library",
+		"type": "har",
+		"deviceTypes": [
+			"default",
+			"tablet"
+		],
+		"packageName": "@liushengyi/smartdb",
+		"installationFree": false,
+		"virtualMachine": "ark11.0.2.0",
+		"compileMode": "esmodule",
+		"dependencies": []
+	}
+}

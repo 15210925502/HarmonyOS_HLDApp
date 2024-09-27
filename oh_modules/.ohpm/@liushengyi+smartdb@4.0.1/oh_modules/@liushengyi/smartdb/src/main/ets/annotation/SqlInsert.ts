@@ -1,0 +1,40 @@
+import DbUtil from '../DbUtil'
+import Logger from '../Logger'
+import relationalStore from '@ohos.data.relationalStore'
+
+/**
+ * 数据插入
+ * @param sql 插入sql
+ * @param genId（table:表名；id:自增id名） 获取自增id配置
+ * @returns
+ */
+export function SqlInsert(sql: string, genId?: {
+  table: string,
+  id: string
+}): MethodDecorator {
+  return DbUtil.handleSql(sql, (newSql,bindArgs, target, propertyKey) => {
+    return new Promise(async (resolve, reject) => {
+      let resultSet: relationalStore.ResultSet = null
+      try {
+        let dbHelper = DbUtil.getDbHelperByDecorator(target, propertyKey)
+        let rdbStore = await dbHelper.getRdbStore()
+        await rdbStore.executeSql(newSql,bindArgs)
+        if (genId && genId.table && genId.id) {
+          resultSet = await rdbStore.querySql(`SELECT max(${genId.id}) from ${genId.table}`)
+          resultSet.goToFirstRow()
+          resolve(resultSet.getLong(0))
+        } else {
+          // @ts-ignore
+          resolve()
+        }
+      } catch (e) {
+        Logger.error(e)
+        reject(e)
+      } finally {
+        if (resultSet) {
+          resultSet.close()
+        }
+      }
+    })
+  })
+}
