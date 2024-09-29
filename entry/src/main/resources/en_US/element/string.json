@@ -115,6 +115,10 @@
     {
       "name": "strength",
       "value": "strength"
+    },
+    {
+      "name": "permission_reason_imageVideo",
+      "value": "User"
     }
   ]
 }

@@ -115,6 +115,10 @@
     {
       "name": "strength",
       "value": "力量训练"
+    },
+    {
+      "name": "permission_reason_imageVideo",
+      "value": "获取图片用于编辑图片"
     }
   ]
 }

@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/hualingdong/.ohos/config/default_HarmonyOS_HLDApp_uWRSqXWNWiA8MTW8nJXsrAQt_OdkA6TS_6a2PeskuCU=.cer",
+          "storePassword": "0000001B646F9977F4C2EAAF33BDCC46F7DC12432D97145AACB80BB10FF440050DD74BF5A68089B7035CD5",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BF6FA55C73431AD5060E436642F855A79A334C5CFB4E25644047D69CB6174D256EF962CF1D4C4D1",
+          "profile": "/Users/hualingdong/.ohos/config/default_HarmonyOS_HLDApp_uWRSqXWNWiA8MTW8nJXsrAQt_OdkA6TS_6a2PeskuCU=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/hualingdong/.ohos/config/default_HarmonyOS_HLDApp_uWRSqXWNWiA8MTW8nJXsrAQt_OdkA6TS_6a2PeskuCU=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",

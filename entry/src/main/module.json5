@@ -50,7 +50,19 @@
     ],
     //打开网络权限
     "requestPermissions": [
-      {"name": "ohos.permission.INTERNET"}
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.READ_IMAGEVIDEO",
+        "reason": '$string:permission_reason_imageVideo',
+        "usedScene": {}
+      },
+      {
+        "name": "ohos.permission.WRITE_IMAGEVIDEO",
+        "reason": '$string:permission_reason_imageVideo',
+        "usedScene": {}
+      }
     ]
   }
 }
