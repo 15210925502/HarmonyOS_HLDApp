@@ -1,0 +1,89 @@
+{
+  "HVIGOR_OHOS_PLUGIN": {
+    "MODULE_CONFIG": [
+      {
+        "MODULE_NAME": "entry",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          },
+          {
+            "name": "ohosTest"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type",
+        "INCREMENTAL_TASKS": {
+          "COMPILE_ARKTS": true
+        }
+      }
+    ],
+    "PROJECT_CONFIG": {
+      "PRODUCTS": [
+        {
+          "NAME": "default",
+          "COMPATIBLE_SDK_VERSION": "5.0.0(12)",
+          "RUNTIMEOS": "HarmonyOS"
+        }
+      ],
+      "BUILD_MODE_SET": [
+        {
+          "NAME": "debug"
+        },
+        {
+          "NAME": "release"
+        }
+      ],
+      "MODULES": [
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        }
+      ],
+      "BUILD_MODE": "debug"
+    }
+  },
+  "totalTime": 4963885547,
+  "moduleNum": 1,
+  "taskTime": {
+    "compileArkTS": 3105928948,
+    "buildArkTS": 0,
+    "compileJS": 0,
+    "buildJS": 8513744,
+    "compileResource": 0,
+    "packageHap": 770240319,
+    "signHap": 529300450
+  },
+  "isIncremental": true,
+  "hasIncremental": true,
+  "isParallel": true,
+  "IS_DAEMON": true,
+  "LOG_LEVEL": "INFO",
+  "IS_HVIGORFILE_TYPE_CHECK": false,
+  "TASK_TIME": {
+    "entry": {
+      "ConfigureCmake": 592846,
+      "PreCheckSyscap": 385773,
+      "GeneratePkgContextInfo": 482963,
+      "ProcessIntegratedHsp": 2932999,
+      "BuildNativeWithCmake": 570155,
+      "SyscapTransform": 7612721,
+      "BuildNativeWithNinja": 2292358,
+      "BuildJS": 8513744,
+      "CompileArkTS": 3105928948,
+      "GeneratePkgModuleJson": 1657075,
+      "PackageHap": 770240319,
+      "SignHap": 529300450,
+      "assembleHap": 430530
+    }
+  },
+  "BUILD_ID": "202409291451060130"
+}

@@ -1,0 +1,185 @@
+{
+  "ohos-module-entry": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build",
+    "DEPENDENCY_INFO": {
+      "@liushengyi/smartdb": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/oh_modules/.ohpm/@liushengyi+smartdb@4.0.1/oh_modules/@liushengyi/smartdb",
+      "@ohos/axios": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/oh_modules/.ohpm/@ohos+axios@2.2.3/oh_modules/@ohos/axios"
+    },
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/src/main",
+        "RESOURCES_PATH": [
+          "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/src/main/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/outputs/default",
+          "INTERMEDIA_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/loader_out/default",
+          "JS_LITE_ASSETS_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/loader_out_lite/default",
+          "RES_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/res/default",
+          "RES_PROFILE_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/res/default/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/cache/default/default@CompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/cache/default/default@CompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/loader/default/loader.json",
+          "MANIFEST_JSON": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/manifest/default",
+          "OUTPUT_METADATA_JSON": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/hap_metadata/default/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      },
+      "ohosTest": {
+        "SOURCE_ROOT": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/src/ohosTest",
+        "RESOURCES_PATH": [
+          "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/src/ohosTest/resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/outputs/ohosTest",
+          "INTERMEDIA_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates",
+          "JS_ASSETS_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/loader_out/ohosTest",
+          "JS_LITE_ASSETS_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/loader_out_lite/ohosTest",
+          "RES_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/res/ohosTest",
+          "RES_PROFILE_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/res/ohosTest/resources/base/profile",
+          "ETS_SUPER_VISUAL_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/cache/ohosTest/ohosTest@OhosTestCompileArkTS/esmodule",
+          "JS_SUPER_VISUAL_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/cache/ohosTest/ohosTest@OhosTestCompileJS/jsbundle",
+          "WORKER_LOADER": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/loader/ohosTest/loader.json",
+          "MANIFEST_JSON": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/manifest/ohosTest",
+          "OUTPUT_METADATA_JSON": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry/build/default/intermediates/hap_metadata/ohosTest/output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default",
+        "strictMode": {
+          "caseSensitiveCheck": true
+        },
+        "name": "debug"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "buildOptionSet": [
+        {
+          "name": "release",
+          "arkOptions": {
+            "obfuscation": {
+              "ruleOptions": {
+                "enable": false,
+                "files": [
+                  "./obfuscation-rules.txt"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "default"
+        },
+        {
+          "name": "debug"
+        }
+      ],
+      "targets": [
+        {
+          "name": "default"
+        },
+        {
+          "name": "ohosTest"
+        }
+      ]
+    }
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/build",
+    "BUNDLE_NAME": "com.example.hldapplication",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/build/outputs/default"
+    },
+    "MODULES": [
+      {
+        "name": "entry",
+        "srcPath": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp/entry",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ],
+        "belongProjectPath": "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp"
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [
+          {
+            "name": "default",
+            "type": "HarmonyOS",
+            "material": {
+              "certpath": "/Users/hualingdong/.ohos/config/default_HarmonyOS_HLDApp_uWRSqXWNWiA8MTW8nJXsrAQt_OdkA6TS_6a2PeskuCU=.cer",
+              "storePassword": "0000001B646F9977F4C2EAAF33BDCC46F7DC12432D97145AACB80BB10FF440050DD74BF5A68089B7035CD5",
+              "keyAlias": "debugKey",
+              "keyPassword": "0000001BF6FA55C73431AD5060E436642F855A79A334C5CFB4E25644047D69CB6174D256EF962CF1D4C4D1",
+              "profile": "/Users/hualingdong/.ohos/config/default_HarmonyOS_HLDApp_uWRSqXWNWiA8MTW8nJXsrAQt_OdkA6TS_6a2PeskuCU=.p7b",
+              "signAlg": "SHA256withECDSA",
+              "storeFile": "/Users/hualingdong/.ohos/config/default_HarmonyOS_HLDApp_uWRSqXWNWiA8MTW8nJXsrAQt_OdkA6TS_6a2PeskuCU=.p12"
+            }
+          }
+        ],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.0.0(12)",
+            "runtimeOS": "HarmonyOS",
+            "buildOption": {
+              "strictMode": {
+                "caseSensitiveCheck": true
+              }
+            }
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "entry",
+          "srcPath": "./entry",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "/Users/hualingdong/Documents/Code/HarmonyOS/HarmonyOS_HLDApp"
+    ]
+  },
+  "version": 1
+}
